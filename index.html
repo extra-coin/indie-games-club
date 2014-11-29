@@ -14,6 +14,42 @@
     <!--[if lt IE 8]>
     <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
+    <style type="text/css">
+      .wrapper {
+         max-width: 800px;
+      }
+      .wrapper section {
+         float: left;
+         max-width: 800px;
+      }
+      .wrapper .dates {
+         float: right;
+         width: 40%;
+      }
+      .flyer {
+         height: auto;
+         width: 48%;
+         float: left;
+      }
+      .wrapper datetime a {
+         color: #fff;
+      }
+      .busstop {
+         display: inline-block;
+         float: right;
+         width: 20%;
+      }
+      .busstop img {
+         vertical-align: text-bottom;
+      }
+      .logo_classico {
+         width: 80px;
+         vertical-align: middle;
+      }
+      section #title .credits {
+         font-size: 12px;
+      }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta property="og:image" content="img/animated.gif">
   </head>
@@ -21,34 +57,45 @@
       <div id="header">
         <nav>
           <li class="fork"><h1>Indie Games Club</h1></li>
-          <li class="downloads"><a href="https://github.com/extra-coin/indie-games-club/issues">dates</a></li>
+          <li class="downloads">
+            <!-- <a href="https://github.com/extra-coin/indie-games-club/issues">dates</a> -->
+            <a href="https://twitter.com/intent/tweet?button_hashtag=indiegamesclub&text=Venez%20d%C3%A9couvrir%20les%20meilleurs%20jeux%20ind%C3%A9s%20du%20moment%2C%20Jeudi%204%20d%C3%A9cembre%20au%20Classico%20%C3%A0%20Nancy" class="twitter-hashtag-button" data-lang="fr" data-size="large" data-related="extracoin" data-url="http://extra-coin.github.io/indie-games-club">Tweet #indiegamesclub</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          </li>
         </nav>
       </div>
 
     <div class="wrapper">
 
-      <section style="float:left">
+      <section>
 
         <div id="title">
           <span class="credits left">Une initiative de l'association <a href="http://www.extra-coin.fr" class="user-mention">@ExtraCoin</a></span>
           <span class="credits right">au <a href="https://www.facebook.com/leclassicopub">Classico</a> à <a href="#map">Nancy</a></span>
         </div>
 
-        <img src="images/flyer_800.jpg" style="height:auto; width:48%; float:left">
+        <img class="flyer" src="images/flyer_800.jpg">
 
-        <ul style="float:right; width:40%">
+        <ul class="dates">
            <li>
              <datetime><a name="4-12-2014">Jeudi 4 Décembre 2014, 19h</a></datetime>
-             <br>Broforce, Lethal League
+             <br><a href="http://www.broforcegame.com">Broforce</a>, <a href="http://lethalleague.reptile-games.com">Lethal League</a>
            </li>
         </ul>
 
 	<br style="clear:both">
         <hr style="margin-top: 10%;">
 
-	<p>1 rue du Général Hoche, 54000 Nancy</p>
-	<iframe id="map" style="width:100%; height:400px" frameborder="0" style="border:0" src="https://www.google.fr/maps/embed/v1/place?key=AIzaSyChGKbxnddPxymbap1gU4GxjRwJI_dUSnI&q=1+Rue+G%C3%A9n%C3%A9ral+Hoche,+54000+Nancy/@48.6844485,6.1700789,17z/data=!3m1!4b1!4m2!3m1!1s0x47949879d13abb93:0xb286d995afabc704"></iframe>
-
+        <a name="map"></a>
+	<p style="float:left">
+          <img class="logo_classico" src="images/logo_classico.png"/> 1 rue du Général Hoche, 54000 Nancy
+        </p>
+        <span class="busstop">
+          <a target="_blank" href="http://www.reseau-stan.com/horaires/ligne/index.asp?rub_code=6&lign_id=8&sens=1"><img src="images/stop_8.png"/> Kléber</a>
+        </span>
+        <span class="busstop">
+          <a target="_blank" href="http://www.reseau-stan.com/horaires/ligne/index.asp?rub_code=6&lign_id=81&sens=2"><img src="images/stop_t1.png"/> Kennedy</a>
+        </span>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2634.100220219166!2d6.1700789!3d48.68444849999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47949879d13abb93%3A0xb286d995afabc704!2s1+Rue+G%C3%A9n%C3%A9ral+Hoche%2C+54000+Nancy!5e0!3m2!1sen!2sfr!4v1417280538670" width="100%" height="450" frameborder="0" style="border:0"></iframe>
       </section>
 
      <hr>
